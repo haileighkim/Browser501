@@ -6,9 +6,10 @@
 <script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
-jQuery:자바스크립트를 이용해 만든 라이브러리<br>
-자바스크립트에 비해 호환성 증대. App설계 시 한번만 하면 됨<br>
-쉽고 편리한 Animation 효과 기능<br>
+	jQuery:자바스크립트를 이용해 만든 라이브러리
+	<br> 자바스크립트에 비해 호환성 증대. App설계 시 한번만 하면 됨
+	<br> 쉽고 편리한 Animation 효과 기능
+	<br>
 	<script>
 		$().ready(function() {
 			alert("jQuery start!");
@@ -21,10 +22,14 @@ jQuery:자바스크립트를 이용해 만든 라이브러리<br>
 		$(function() {
 			$("h1").css("border", "1px solid blue");
 		});
+
+		$(function() {
+			$(".direct",h2).css("background-color", "yellow");
+		});
 	</script>
 	<h1>jQuery</h1>
 	<h2>선택자(selector)</h2>
-	<h3>직접 selector</h3>
+	<h3 class="direct">직접 selector</h3>
 
 </body>
 </html>
