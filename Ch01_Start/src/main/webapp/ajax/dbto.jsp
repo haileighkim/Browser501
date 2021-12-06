@@ -25,7 +25,7 @@ try{
 	Class.forName(driver);
 	Connection con = DriverManager.getConnection(url, "jsp", "jsp");
 	Statement stmt = con.createStatement();
-	String sql = "insert into join values('"+name+"','"+age+"','"+salary+"')";
+	String sql = "insert into join" + " values('"+name+"','"+age+"','"+salary+"')";
 	stmt.executeUpdate(sql);
 	con.close();
 	stmt.close();
