@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page buffer = "1kb" autoFlush="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-현재 페이지는 <b>responseRedirect.jsp</b>
 <%
-	request.setAttribute("ids", "abcd");
-	response.sendRedirect("responseResult.jsp?id=hong");
+	for(int i=0; i<1000; i++)
+		out.println("1234");
 %>
-redirect 밑에 있는 내용<br>
 </body>
 </html>

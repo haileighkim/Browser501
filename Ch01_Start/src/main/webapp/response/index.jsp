@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+String id = request.getParameter("memberid");
+out.println("id: "+id);
 
+String name = request.getParameter("name");
+out.println("name: "+name);
+%>
 </body>
 </html>

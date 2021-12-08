@@ -1,3 +1,4 @@
+<%@page import="java.net.URLEncoder"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,9 +9,14 @@
 </head>
 <body>
 <%
+
+// 주석
+/* 여러 줄 주석 */
  String id=request.getParameter("memberid");
 if(id != null && id.equals("admin")){
-	response.sendRedirect("index.jsp");
+	String value="홍길동";
+	String encodeValue = URLEncoder.encode(value,"utf-8");
+	response.sendRedirect("index.jsp?name="+encodeValue);
 }else {
 	out.println("잘못된 id입니다.");
 }
