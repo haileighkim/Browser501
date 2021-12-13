@@ -7,7 +7,7 @@
 <title>Jsp::include</title>
 </head>
 <body>
-<img src ="../jsp_include.png"><br>
+<img src ="jsp_include.png"><br>
 <%
 	request.setAttribute("name1", "park");
 %>

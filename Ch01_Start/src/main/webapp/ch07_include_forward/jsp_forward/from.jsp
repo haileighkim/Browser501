@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<img src="../jsp_forward.png"><br>
+<img src="jsp_forward.png"><br>
 이 페이지는 from.jsp 페이지 입니다1.<br>
 <%
 	request.setAttribute("number", "1234");
