@@ -15,6 +15,6 @@
 %>
 <%@ include file="includee.jspf" %>
 
-<%-- 공통변수 DATAFOLDER= "<%=dataFolder %>" --%>
+공통변수 DATAFOLDER= "<%=dataFolder %>"
 </body>
 </html>
